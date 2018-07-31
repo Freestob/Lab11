@@ -15,6 +15,15 @@ namespace Cinemas.Library
         {
             Movie = movie;
             Genre = genre;
+            
+        }
+        public string GetMovie()
+        {
+            return Movie;
+        }
+        public string GetGenre()
+        {
+            return Genre;
         }
 
     }

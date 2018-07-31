@@ -24,9 +24,56 @@ namespace Lab11
             movieList.Add(new Cinema("The Strangers", "Horror"));
 
             Console.WriteLine("Which type of movie do you want to see?\n1.\tComedy\n2.\tFantasy\n3.\tRom-Com\n4.\tHorror");
+            string userEntry= Console.ReadLine();
+            switch (userEntry)
+            {
+                case "1":
+                    {
+                        foreach (Cinema cinema in movieList)
+                        {
+                            if (cinema.GetGenre()=="Comedy")
+                            {
+                                Console.WriteLine(cinema.GetMovie());
+                            }
+                        }
+                    }
+                    break;
+
+                case "2":
+                    {
+                        foreach(Cinema cinema in movieList)
+                        {
+                            if (cinema.GetGenre()=="Fantasy")
+                            {
+                                Console.WriteLine(cinema.GetMovie());
+                            }
+                        }
+                    }
+                    break;
+                case "3":
+                    {
+                        foreach (Cinema cinema in movieList)
+                        {
+                            if (cinema.GetGenre() == "Rom-Com")
+                            {
+                                Console.WriteLine(cinema.GetMovie());
+                            }
+                        }
+                    }
+                    break;
+                case "4":
+                    {
+                        foreach (Cinema cinema in movieList)
+                        {
+                            if (cinema.GetGenre() == "Horror")
+                            {
+                                Console.WriteLine(cinema.GetMovie());
+                            }
+                        }
+                    }
+                    break;
+            }
             Console.ReadLine();
-
-
         }
     }
 }
