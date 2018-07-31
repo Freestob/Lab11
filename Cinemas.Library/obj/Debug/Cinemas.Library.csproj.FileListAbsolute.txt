@@ -1,0 +1,6 @@
+c:\Users\frees\source\repos\Lab11\Cinemas.Library\bin\Debug\Cinemas.Library.dll
+c:\Users\frees\source\repos\Lab11\Cinemas.Library\bin\Debug\Cinemas.Library.pdb
+c:\Users\frees\source\repos\Lab11\Cinemas.Library\obj\Debug\Cinemas.Library.csprojAssemblyReference.cache
+c:\Users\frees\source\repos\Lab11\Cinemas.Library\obj\Debug\Cinemas.Library.csproj.CoreCompileInputs.cache
+c:\Users\frees\source\repos\Lab11\Cinemas.Library\obj\Debug\Cinemas.Library.dll
+c:\Users\frees\source\repos\Lab11\Cinemas.Library\obj\Debug\Cinemas.Library.pdb

@@ -48,5 +48,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cinemas.Library\Cinemas.Library.csproj">
+      <Project>{08d7a591-6c00-4a2d-b59b-103925c29502}</Project>
+      <Name>Cinemas.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
