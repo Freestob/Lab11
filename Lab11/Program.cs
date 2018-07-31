@@ -22,58 +22,69 @@ namespace Lab11
             movieList.Add(new Cinema("The Notebook", "Rom-Com"));
             movieList.Add(new Cinema("Friday the 13th", "Horror"));
             movieList.Add(new Cinema("The Strangers", "Horror"));
-
-            Console.WriteLine("Which type of movie do you want to see?\n1.\tComedy\n2.\tFantasy\n3.\tRom-Com\n4.\tHorror");
-            string userEntry= Console.ReadLine();
-            switch (userEntry)
+            bool doAgain = true;
+            while (doAgain)
             {
-                case "1":
-                    {
-                        foreach (Cinema cinema in movieList)
+                Console.WriteLine("Which type of movie do you want to see?\n1.\tComedy\n2.\tFantasy\n3.\tRom-Com\n4.\tHorror");
+                string userEntry = Console.ReadLine();
+                switch (userEntry)
+                {
+                    case "1":
                         {
-                            if (cinema.GetGenre()=="Comedy")
+                            foreach (Cinema cinema in movieList)
                             {
-                                Console.WriteLine(cinema.GetMovie());
+                                if (cinema.GetGenre() == "Comedy")
+                                {
+                                    Console.WriteLine(cinema.GetMovie());
+                                }
                             }
                         }
-                    }
-                    break;
+                        break;
 
-                case "2":
-                    {
-                        foreach(Cinema cinema in movieList)
+                    case "2":
                         {
-                            if (cinema.GetGenre()=="Fantasy")
+                            foreach (Cinema cinema in movieList)
                             {
-                                Console.WriteLine(cinema.GetMovie());
+                                if (cinema.GetGenre() == "Fantasy")
+                                {
+                                    Console.WriteLine(cinema.GetMovie());
+                                }
                             }
                         }
-                    }
-                    break;
-                case "3":
-                    {
-                        foreach (Cinema cinema in movieList)
+                        break;
+                    case "3":
                         {
-                            if (cinema.GetGenre() == "Rom-Com")
+                            foreach (Cinema cinema in movieList)
                             {
-                                Console.WriteLine(cinema.GetMovie());
+                                if (cinema.GetGenre() == "Rom-Com")
+                                {
+                                    Console.WriteLine(cinema.GetMovie());
+                                }
                             }
                         }
-                    }
-                    break;
-                case "4":
-                    {
-                        foreach (Cinema cinema in movieList)
+                        break;
+                    case "4":
                         {
-                            if (cinema.GetGenre() == "Horror")
+                            foreach (Cinema cinema in movieList)
                             {
-                                Console.WriteLine(cinema.GetMovie());
+                                if (cinema.GetGenre() == "Horror")
+                                {
+                                    Console.WriteLine(cinema.GetMovie());
+                                }
                             }
                         }
-                    }
-                    break;
+                        break;
+                }
+                Console.WriteLine("Would you like again?(y/n)");
+                if(Console.ReadLine()!="y" )
+                {
+                    doAgain = false;
+                    Console.WriteLine("Goodbye");
+                    Console.ReadKey();
+                    
+                }
+
             }
-            Console.ReadLine();
         }
     }
 }
